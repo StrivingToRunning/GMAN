@@ -71,7 +71,7 @@ def loadData(args):
     Time = df.index
     dayofweek =  np.reshape(Time.weekday, newshape = (-1, 1))
     timeofday = (Time.hour * 3600 + Time.minute * 60 + Time.second) \
-                // Time.freq.delta.total_seconds()
+                // (5*60) # Time.freq.delta.total_seconds()
     timeofday = np.reshape(timeofday, newshape = (-1, 1))    
     Time = np.concatenate((dayofweek, timeofday), axis = -1)
     # train/val/test
