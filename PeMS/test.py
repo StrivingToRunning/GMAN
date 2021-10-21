@@ -18,7 +18,7 @@ parser.add_argument('--test_ratio', type = float, default = 0.2,
                     help = 'testing set [default : 0.2]')
 parser.add_argument('--batch_size', type = int, default = 32,
                     help = 'batch size')
-parser.add_argument('--traffic_file', default = 'data/PeMS.h5',
+parser.add_argument('--traffic_file', default = '../input/pemsh5/PeMS.h5',
                     help = 'traffic file')
 parser.add_argument('--SE_file', default = 'data/SE(PeMS).txt',
                     help = 'spatial emebdding file')
