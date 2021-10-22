@@ -16,7 +16,7 @@ parser.add_argument('--val_ratio', type = float, default = 0.1,
                     help = 'validation set [default : 0.1]')
 parser.add_argument('--test_ratio', type = float, default = 0.2,
                     help = 'testing set [default : 0.2]')
-parser.add_argument('--batch_size', type = int, default = 32,
+parser.add_argument('--batch_size', type = int, default = 2,
                     help = 'batch size')
 parser.add_argument('--traffic_file', default = '/kaggle/input/pemsh5/PeMS.h5',
                     help = 'traffic file')
